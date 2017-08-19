@@ -11,8 +11,8 @@
 */
 
 $username = "serveradmin"; //query username
-$password = "alvqRoQX"; //query password
-$host = "88.99.38.147"; //server ip
+$password = "###"; //query password
+$host = "###"; //server ip
 $queryPort = "10011"; //query port
 $serverPort = "9987"; //server port
 $botName = 'TwitchBot'; //bot name
@@ -23,9 +23,9 @@ $ts3Connect = TeamSpeak3::factory("serverquery://{$username}:{$password}@{$host}
 
 class TwitchTV {
   var $base_url = "https://api.twitch.tv/kraken/";
-  var $client_id = 'df1h4jg4e7oufj00jbo6dri4aovrgr'; //twitch api client id
-  var $client_secret = "4j645pt37nkp1yp0mdb85izh5yt6c7"; //twitch api secret
-  var $redirect_url = 'https://datlifearea.com/tw/'; //redirect url (must be same on twitch api settings)
+  var $client_id = '###'; //twitch api client id
+  var $client_secret = "###"; //twitch api secret
+  var $redirect_url = '###'; //redirect url (must be same on twitch api settings)
   var $scope_array = array('user_read'); //don't change
 	
     /**
@@ -682,7 +682,7 @@ $user_name = $twitchtv->authenticated_user($access_token);
 if(isset($user_name)) {
     $channelsApi = 'https://api.twitch.tv/kraken/channels/';
     $channelName = 'xaronnn'; //your channel name (no display name)
-    $clientId = 'df1h4jg4e7oufj00jbo6dri4aovrgr'; //twitch api client id
+    $clientId = '###'; //twitch api client id
     $istek = 'follows'; //request (don't change)
     $ch = curl_init();
     curl_setopt_array($ch, array(
